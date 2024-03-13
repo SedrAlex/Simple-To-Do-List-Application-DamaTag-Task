@@ -2,7 +2,7 @@
 
 A clean and simple todo list app that utilizes local storage to keep tasks populated. Users can add tasks, mark them as completed, and delete them. A running counter at the bottom tells the user how many tasks remain in their list and a group of buttons allows them to filter their list by completed, active, or all tasks.
 
-The app is currently hosted on Vercel: https://mui-react-todolist.vercel.app/
+<!-- The app is currently hosted on Vercel: https://mui-react-todolist.vercel.app/ -->
 
 ![Screenshot 2023-11-12 104039](https://github.com/btoch23/mui-react-todolist/assets/143453855/2768d2fc-2ade-4560-bed8-ba66cfbd3f04)
 
@@ -22,6 +22,7 @@ The app is currently hosted on Vercel: https://mui-react-todolist.vercel.app/
 <ul>
   <li>React</li>
   <li>Javascript</li>
+  <li>Redux</li>
   <li>Material UI</li>
   <li>Vite</li>
   <li>CSS</li>
@@ -30,4 +31,4 @@ The app is currently hosted on Vercel: https://mui-react-todolist.vercel.app/
 
 # Contact
 
-email: brian.toch23@gmail.com
+email: sedra.mhanna313@gmail.com
