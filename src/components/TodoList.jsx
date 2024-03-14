@@ -4,11 +4,13 @@ import TodoItem from './TodoItem';
 import TodoForm from './TodoForm';
 import { Box, Typography, createTheme, ThemeProvider } from '@mui/material';
 import FilterBtn from './FilterBtn';
+import { connect } from 'react-redux';
+import { addTodos } from '../redux/reducer';
 
 const theme = createTheme({
     typography: {
         fontFamily: [
-            'Montserrat',
+            'RocknRoll One',
             'sans-serif',
         ].join(','),
     },});
@@ -46,10 +48,21 @@ const FILTER_MAP = {
 
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
-export default function TodoList() {
+const mapStateToProps = (state) =>{
+    return{
+        todos:state,
+    }
+}
+
+const mapDispatchToprops = (dispatch) => {
+    return{
+        addTodo : (obj) => dispatch(addTodos(obj)),
+    }
+}
+ const  TodoList = (props) =>{
     const [todos, setTodos] = useState(getInitialData);
     const [filter, setFilter] = useState('All');
-
+ console.log("props from store", props);
     const filterList = FILTER_NAMES.map((name) => (
         <FilterBtn 
             key={name}
@@ -132,7 +145,7 @@ export default function TodoList() {
                 >
                     what&apos;s on the docket for today? 
                 </Typography>
-                    <TodoForm addTodo={addTodo} />
+                    <TodoForm  />
                     {taskList}
                     <Typography 
                         variant='h5'
@@ -153,10 +166,11 @@ export default function TodoList() {
                 </List>
             </Box>
             <h5 style={{textAlign: 'center', fontWeight: 100, fontSize: '1rem'}}>
-                made by <a href='https://github.com/btoch23' target="_blank" rel='noreferrer' style={{textDecoration: 'none', color: '#eb5e28'}}>
-                    brian
+                made by <a href='https://github.com/SedrAlex' target="_blank" rel='noreferrer' style={{textDecoration: 'none', color: '#eb5e28'}}>
+                    Sedra
                 </a>
             </h5>
         </ThemeProvider>
     )
 }
+export default connect(mapStateToProps,mapDispatchToprops)(TodoList);

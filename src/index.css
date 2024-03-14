@@ -1,11 +1,92 @@
 html {
-    background-color: #FFFCF2;
+  line-height: 1.15;
 }
 
-#root {
-    background-color: #FFFCF2;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "RocknRoll One", sans-serif;
 }
 
-a:hover {
-    opacity: 60%;
+body {
+  background: linear-gradient(
+    190deg,
+    rgb(134, 123, 205) 0%,
+    rgb(106, 90, 171) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #222;
+  overflow: hidden;
+}
+
+
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: rgb(180, 182, 218);
+  background: radial-gradient(
+    circle,
+    hsla(237, 34%, 78%, 0.9) 0%,
+    hsla(219, 88%, 94%, 0.9) 100%
+  );
+
+  margin: 0 1rem 1rem 0;
+  height: 8rem;
+  width: 18rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  position: relative;
+}
+
+.card textarea {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #e1ebfd;
+
+  color: #271c6c;
+  height: 70%;
+}
+.card textarea:disabled {
+  background-color: transparent;
+}
+
+.card .btns {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.card .btns button {
+  border-radius: 20%;
+  border: none;
+  margin: 0 0.6rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #271c6c;
+  background-color: transparent;
+}
+
+.card .btns button:focus {
+  outline: none;
+}
+
+.completed {
+  position: absolute;
+  right: 0.3rem;
+  top: 0.3rem;
+  background-color: #867bcd;
+  border: 2px solid #272727;
+  color: #e1ebfd;
+
+  font-size: 0.8rem;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
 }
