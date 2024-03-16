@@ -25,7 +25,7 @@ const Login = () => {
     const data = new FormData(e.target);
     const email = data.get("email").trim();
     const password = data.get("password").trim();
-
+console.log("data",data.get("password"));
  
 
     try {

@@ -6,7 +6,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AuthLayout from "./components/layout/AuthLayout";
 import Login from "./pages/Login";
 import AppLayout from "./components/layout/AppLayout";
-import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 
 function App() {
