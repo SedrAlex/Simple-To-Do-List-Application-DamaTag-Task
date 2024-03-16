@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import TodoItem from './TodoItem';
 import TodoForm from './TodoForm';
 import { Box, Typography, createTheme, ThemeProvider } from '@mui/material';
-import FilterBtn from './FilterBtn';
 import { connect } from 'react-redux';
 import { addTodos } from '../redux/reducer';
 
