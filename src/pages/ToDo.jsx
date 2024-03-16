@@ -29,8 +29,8 @@ const ToDo = () => {
             textAlign: "center",
             marginBottom: "2rem",
             fontFamily: "RocknRoll One",
-            color: "#e1ebfd",
-            textShadow: "0 0 5px #433aa8, 3px -1px 5px #271c6c",
+            color: "#fbe4cf",
+            textShadow: "0 0 5px #f28d21, 3px -1px 5px #e77811",
           }}
           initial={{ y: -200 }}
           animate={{ y: 0 }}

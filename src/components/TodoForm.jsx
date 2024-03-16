@@ -79,11 +79,11 @@ const navigate = useNavigate();
           minWidth: "15rem",
           width: "40vw",
           maxHeight: "5.5rem",
-          backgroundColor: "#dad2e7",
+          backgroundColor: "#fbe4cf",
           border: "none",
           borderRadius: "5px ",
           alignSelf: "center",
-          borderColor: "rgb(67, 58, 168)",
+          borderColor: "#f28d21",
         }}
         color="secondary"
         id="outlined-basic"
@@ -104,7 +104,7 @@ const navigate = useNavigate();
           onClick={() => add()}
           sx={{
             marginLeft: "1rem",
-            backgroundColor: "#271c6c",
+            backgroundColor: "#f28d21",
             color: "#e1ebfd",
             borderRadius: "50%",
             border: "2px solid #e1ebfd",
@@ -112,7 +112,7 @@ const navigate = useNavigate();
             width: "3.2rem",
             height: "3.2rem",
             cursor: "pointer",
-            boxShadow: "2px 4px 10px #271c6c",
+            boxShadow: "2px 4px 10px #f28d21",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -134,7 +134,7 @@ const navigate = useNavigate();
           onClick={() => handleLogout()}
           sx={{
             marginLeft: "1rem",
-            backgroundColor: "#271c6c",
+            backgroundColor: "#034b11",
             color: "#e1ebfd",
             borderRadius: "50%",
             border: "2px solid #e1ebfd",
@@ -142,7 +142,7 @@ const navigate = useNavigate();
             width: "3.2rem",
             height: "3.2rem",
             cursor: "pointer",
-            boxShadow: "2px 4px 10px #271c6c",
+            boxShadow: "2px 4px 10px #f28d21",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
