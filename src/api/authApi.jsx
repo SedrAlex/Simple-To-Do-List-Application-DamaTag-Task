@@ -2,9 +2,9 @@ import axiosClient from "./axiosClient"
 
 
 const authApi = {
-  signup: params => axiosClient.post('auth/signup', params),
-  login: params => axiosClient.post('auth/login', params),
-  verifyToken: () => axiosClient.post('auth/verify-token', params),
+  signup: params => axiosClient.post('api/auth/register', params),
+  login: params => axiosClient.post('api/auth/login', params),
+  verifyToken: () => axiosClient.post('api/auth/verify-token', params),
 
 }
 

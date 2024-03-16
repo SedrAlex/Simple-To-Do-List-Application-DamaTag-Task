@@ -13,6 +13,7 @@ import {
 } from "../redux/reducer";
 import { Divider } from "@mui/material";
 import { motion } from "framer-motion";
+import { LogoutOutlined } from "@mui/icons-material";
 
 const mapStateToProps = (state) => {
   return {
@@ -29,7 +30,6 @@ const mapDispatchToprops = (dispatch) => {
   };
 };
 
-
 const TodoForm = (props) => {
   const [todo, setTodo] = useState("");
 
@@ -44,7 +44,7 @@ const TodoForm = (props) => {
       });
       setTodo("");
     }
-  }
+  };
 
   const inputRef = useRef(true);
 
@@ -86,36 +86,67 @@ const TodoForm = (props) => {
         value={todo}
       />
 
-      <ButtonBase
-        component={motion.button}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        aria-label="create todo"
-        edge="end"
-        type="submit"
-        onClick={() => add()}
+      <Box display="flex" justifyContent="center">
+        <ButtonBase
+          component={motion.button}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          aria-label="create todo"
+          edge="end"
+          type="submit"
+          onClick={() => add()}
+          sx={{
+            marginLeft: "1rem",
+            backgroundColor: "#271c6c",
+            color: "#e1ebfd",
+            borderRadius: "50%",
+            border: "2px solid #e1ebfd",
+            fontSize: "1.5rem",
+            width: "3.2rem",
+            height: "3.2rem",
+            cursor: "pointer",
+            boxShadow: "2px 4px 10px #271c6c",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            "&:focus": {
+              outline: "none",
+            },
+          }}
+        >
+          <AddOutlinedIcon />
+        </ButtonBase>
 
-        sx={{
-          marginLeft: "1rem",
-          backgroundColor: "#271c6c",
-          color: "#e1ebfd",
-          borderRadius: "50%",
-          border: "2px solid #e1ebfd",
-          fontSize: "1.5rem",
-          width: "3.2rem",
-          height: "3.2rem",
-          cursor: "pointer",
-          boxShadow: "2px 4px 10px #271c6c",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          "&:focus": {
-            outline: "none",
-          },
-        }}
-      >
-        <AddOutlinedIcon />
-      </ButtonBase>
+        <ButtonBase
+          component={motion.button}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          aria-label="create todo"
+          edge="end"
+          type="submit"
+          onClick={() => add()}
+          sx={{
+            marginLeft: "1rem",
+            backgroundColor: "#271c6c",
+            color: "#e1ebfd",
+            borderRadius: "50%",
+            border: "2px solid #e1ebfd",
+            fontSize: "1.5rem",
+            width: "3.2rem",
+            height: "3.2rem",
+            cursor: "pointer",
+            boxShadow: "2px 4px 10px #271c6c",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            "&:focus": {
+              outline: "none",
+            },
+          }}
+        >
+          <LogoutOutlined />
+        </ButtonBase>
+      </Box>
     </Box>
   );
 };

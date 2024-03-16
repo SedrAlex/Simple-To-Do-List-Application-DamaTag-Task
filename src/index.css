@@ -10,14 +10,14 @@ html {
 }
 
 body {
-  background: linear-gradient(
+  /* background: linear-gradient(
     190deg,
     rgb(134, 123, 205) 0%,
     rgb(106, 90, 171) 100%
   );
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   color: #222;
   overflow: hidden;
 }

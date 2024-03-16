@@ -1,7 +1,8 @@
 import axios from 'axios'
 import React from 'react'
 import queryString from 'query-string'
-const baseUrl = ''
+
+const baseUrl = 'http://127.0.0.1:5000'
 const getToken =  () =>localStorage.getItem('token')
 
 

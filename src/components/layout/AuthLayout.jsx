@@ -16,7 +16,7 @@ const AuthLayout = () => {
       if (!isAuth) {
         setLoading(false);
       } else {
-        navigate("/");
+        navigate("/todo");
       }
     };
     checkAuth();
