@@ -23,7 +23,21 @@ This project is a To-Do List application developed using React, featuring user a
 - Node.js
 - npm or yarn
 
-### Installation
+## Backend Setup
+
+Before using the frontend application, you need to set up and run the backend server. Follow these steps to get the backend server running:
+
+1. **Clone the Repository**: Use `git clone https://github.com/SedrAlex/Task-Manager-API` to clone the repository.
+2. **Navigate to Server Directory**: Use `cd server` to navigate to the project directory.
+3. **Install Dependencies**: Run `npm install` to install all necessary dependencies.
+4. **Configure Environment Variables**: Create a `config.env` file in the `src` directory and set the following environment variables:
+   - `MONGO_URI`: Your MongoDB database URL
+   - `PORT`: The port number on which your application will run
+   - `TOKEN_SECRET_KEY`: Your JSON Web Token (JWT) secret key
+5. **Start the Server**: Run `npm start` to start the server.
+6. **Verify the Application is Running**: Open your web browser and navigate to `http://localhost:<PORT>`, replacing `<PORT>` with the port number you specified in the `.env` file.
+
+### Frontend Setup
 
 1. Clone the repository: `git clone https://github.com/SedrAlex/Simple-To-Do-List-Application.git`
 2. Navigate to the project directory: `cd Simple-To-Do-List-Application`
