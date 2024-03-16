@@ -42,7 +42,7 @@ Before using the frontend application, you need to set up and run the backend se
 1. Clone the repository: `git clone https://github.com/SedrAlex/Simple-To-Do-List-Application.git`
 2. Navigate to the project directory: `cd Simple-To-Do-List-Application`
 3. Install dependencies: `npm install` or `yarn install`
-4. Start the development server: `npm start` or `yarn start`
+4. Start the development server: `npm run dev` or `yarn run dev`
 
 ### Usage
 
