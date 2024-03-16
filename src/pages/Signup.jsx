@@ -129,7 +129,7 @@ const Signup = () => {
           helperText={confirmPasswordErrText}
         />
         <LoadingButton
-          sx={{ mt: 3, mb: 2 }}
+          sx={{ mt: 3, mb: 2 ,backgroundColor:"#fff"}}
           variant="outlined"
           fullWidth
           color="success"
@@ -139,7 +139,7 @@ const Signup = () => {
           Signup
         </LoadingButton>
       </Box>
-      <Button component={Link} to="/login" sx={{ textTransform: "none" }}>
+      <Button component={Link} to="/login" sx={{ textTransform: "none" ,color:"#000"}}>
         Already have an account? Login
       </Button>
     </>

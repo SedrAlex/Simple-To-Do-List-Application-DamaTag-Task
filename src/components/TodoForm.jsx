@@ -14,6 +14,7 @@ import {
 import { Divider } from "@mui/material";
 import { motion } from "framer-motion";
 import { LogoutOutlined } from "@mui/icons-material";
+import { useNavigate} from "react-router-dom";
 
 const mapStateToProps = (state) => {
   return {
@@ -32,7 +33,7 @@ const mapDispatchToprops = (dispatch) => {
 
 const TodoForm = (props) => {
   const [todo, setTodo] = useState("");
-
+const navigate = useNavigate();
   const add = () => {
     if (todo === "") {
       alert("Input is Empty");
@@ -57,6 +58,12 @@ const TodoForm = (props) => {
     setTodo(evt.target.value);
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+
+    // Redirect to the login page
+    navigate('/login');
+ }
   const update = (id, value, e) => {
     if (e.which === 13) {
       // here 13 is key code for entry key
@@ -124,7 +131,7 @@ const TodoForm = (props) => {
           aria-label="create todo"
           edge="end"
           type="submit"
-          onClick={() => add()}
+          onClick={() => handleLogout()}
           sx={{
             marginLeft: "1rem",
             backgroundColor: "#271c6c",
